@@ -1,7 +1,9 @@
 
 [英文文档](./README_en.md)
-### 
-新的依赖不能显示脚本运行日志了
+
+## 注意事项
+1. 不能显示脚本运行日志，只有登录结果
+2. 阅读量统计有延迟，建议看点赞记录
 
 ## 使用方法一：油猴脚本(火狐不兼容,谷歌可以用)
 
@@ -69,12 +71,13 @@ node .\bypasscf_likeUser.js
 ### 3.启动 workflow
 
 教程：https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web?tab=readme-ov-file#enable-automatic-updates
-
+以下两个任务用于阅读
+readLike（自动阅读随机点赞）和 likeUser (点赞特定用户)
 ## 使用方法四：docker 运行
 
 ### 1.立刻执行
 
-克隆仓库，在`docker-compose.yml`里面设置环境变量，然后运行
+克隆仓库，新建.env.local, 按照.env的格式在里面设置环境变量，然后运行
 
 ```sh
 # 自动阅读随机点赞
